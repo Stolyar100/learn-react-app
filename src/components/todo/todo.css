@@ -34,3 +34,10 @@
     color: #ffffff;
     padding: 10px 10px;
 }
+
+.todo__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

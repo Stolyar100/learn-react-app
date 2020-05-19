@@ -28,6 +28,7 @@ export default class Todo extends Component {
                     <input
                     className="todo__input"
                     type="text"
+                    placeholder="enter task"
                     value={this.state.value}
                     onChange={this.handleChange}
                     />
