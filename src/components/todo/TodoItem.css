@@ -1,6 +1,10 @@
 .todo__item {
     background-color: #aee1fb;
+    color: #000000;
     font-size: 18px;
     padding: 10px 10px;
     width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: left;
 }
