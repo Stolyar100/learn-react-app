@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './todo.css';
+
 export default class Todo extends Component {
     constructor(props) {
         super(props);
