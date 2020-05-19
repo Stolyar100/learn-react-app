@@ -31,7 +31,7 @@ export default class Todo extends Component {
                     value={this.state.value}
                     onChange={this.handleChange}
                     />
-                    <button className="todo__add-btn" />
+                    <button className="todo__add-btn">add</button>
                 </div>
                 <div className="todo__list"></div>
             </div>
