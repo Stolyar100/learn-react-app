@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Task1 from './components/task1/Task1';
 import ComponentA from './components/task2/ComponentA';
 import Todo from './components/todo/Todo';
+import Form from './components/form/Form';
 
 export default class TaskSelector extends Component {
     constructor(props) {
@@ -32,6 +33,9 @@ export default class TaskSelector extends Component {
             case '3':
                 currentComponent = <Todo />;
                 break;
+            case '4':
+                currentComponent = <Form />;
+                break;
             default:
                 currentComponent = <h3>Something wentWrong</h3>;
                 break;
@@ -46,6 +50,7 @@ export default class TaskSelector extends Component {
                     <option value="1">Task1</option>
                     <option value="2">Task2</option>
                     <option value="3">Todo</option>
+                    <option value="4">Form</option>
                 </select>
                 {currentComponent}
             </div>
