@@ -9,7 +9,7 @@ export default class TaskSelector extends Component {
         super(props)
     
         this.state = {
-            value: '0',
+            value: '4',
         }
         this.handleChange = this.handleChange.bind(this);
     }
@@ -42,7 +42,7 @@ export default class TaskSelector extends Component {
         }
         
         return (
-            <div>
+            <>
                 <select 
                 value={this.state.value}
                 onChange={this.handleChange}>
@@ -53,7 +53,7 @@ export default class TaskSelector extends Component {
                     <option value="4">Form</option>
                 </select>
                 {currentComponent}
-            </div>
+            </>
         )
     }
 }
