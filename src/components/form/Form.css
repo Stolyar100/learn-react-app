@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    background-color: #6765cb;
+    border-radius: 3px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 30px;
+    width: 100%;
+}
+
+.form__title {
+    color: #000;
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.form__input {
+    background-color: #e5e8ed;
+    border: 0px;
+    border-radius: 2px;
+    padding: 13px 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #727272;
+}
+
+.form__description {
+    color: #919191;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.form__checkbox-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form__checkbox {
+    margin-right: 10px;
+}
+
+.form__checkbox input[type="checkbox"]:checked {
+    background-color: #6765cb;
+    border-color: #6765cb;;
+}
+
+.form_sign-btn {
+    font-size: 16px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #6765cb;
+    padding: 11px 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form_forgot-btn {
+    border: 0;
+}
+
