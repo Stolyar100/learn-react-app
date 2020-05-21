@@ -9,7 +9,7 @@ export default class TaskSelector extends Component {
         super(props)
     
         this.state = {
-            value: '4',
+            value: '0',
         }
         this.handleChange = this.handleChange.bind(this);
     }
