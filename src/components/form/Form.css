@@ -80,3 +80,7 @@
     background-color: transparent;
 }
 
+.form__error {
+    color: #919191;
+    font-size: 12px;
+}
