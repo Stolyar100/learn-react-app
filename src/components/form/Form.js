@@ -57,7 +57,9 @@ export const SignInForm = withFormik({
         password: Yup.string().min(8).required('password is required'),
         keepSignIn: Yup.boolean().oneOf([true], 'checkbox is required'),
     }),
-    handleSubmit(values) {
-        console.log(values);
+    handleSubmit(values, {resetForm}) {
+        const user = values.email.match(/^(.+)@/)[1];
+        resetForm();
+        alert(`Wellcome ${user}`);
     },
 })(FormLayout);
