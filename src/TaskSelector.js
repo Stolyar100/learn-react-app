@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Task1 from './components/task1/Task1';
 import ComponentA from './components/task2/ComponentA';
 import Todo from './components/todo/Todo';
-import Form from './components/form/Form';
+import {SignInForm} from './components/form/Form';
 
 export default class TaskSelector extends Component {
     constructor(props) {
@@ -34,7 +34,7 @@ export default class TaskSelector extends Component {
                 currentComponent = <Todo />;
                 break;
             case '4':
-                currentComponent = <Form />;
+                currentComponent = <SignInForm />;
                 break;
             default:
                 currentComponent = <h3>Something wentWrong</h3>;

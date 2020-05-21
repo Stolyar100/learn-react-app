@@ -1,23 +1,52 @@
 import React from 'react';
+import { withFormik, Form, Field } from 'formik';
+import Yup from 'yup';
 
 import './Form.css';
 
-export default function Form() {
+const FormLayout = ({ values }) => {
     return (
         <div className="form">
-            <form className="form__block">
+            <Form className="form__block">
                 <h3 className="form__title">Sign in to your account</h3>
-                <input type="email" className="form__input form__email" />
-                <input type="password" className="form__input form__password" />
-                <div className="form__checkbox-block">
-                    <input className="form__checkbox" type="checkbox" />
+                <Field
+                    type="email"
+                    name="email"
+                    className="form__input form__email"
+                    placeholder="email"
+                />
+                <Field
+                    type="password"
+                    name="password"
+                    className="form__input form__password"
+                    placeholder="password"
+                />
+                <label className="form__checkbox-block">
+                    <Field
+                        type="checkbox"
+                        name="keepSignIn"
+                        className="form__checkbox"
+                    />
                     <p className="form__description">Keep me signed in</p>
-                </div>
+                </label>
                 <button className="form_sign-btn">Sign in</button>
                 <button className="form__description form_forgot-btn">
                     Forgot your password?
                 </button>
-            </form>
+            </Form>
         </div>
     );
-}
+};
+
+export const SignInForm = withFormik({
+    mapPropsToValues() {
+        return {
+            email: '',
+            password: '',
+            keepSignIn: false,
+        };
+    },
+    handleSubmit(values) {
+        console.log(values);
+    },
+})(FormLayout);
